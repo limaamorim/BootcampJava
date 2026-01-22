@@ -1,0 +1,8 @@
+# IntelliJ / IDE
+.idea/
+*.iml
+out/
+
+# Logs e arquivos temporários
+*.log
+*.class
