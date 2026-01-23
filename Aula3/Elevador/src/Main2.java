@@ -34,6 +34,8 @@ public class Main2 {
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
 
+
+
             switch (opcao) {
                 case 1 -> elevadorService.entra(elevador);
                 case 2 -> elevadorService.sai(elevador);
