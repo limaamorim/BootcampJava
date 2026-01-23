@@ -1,0 +1,65 @@
+:root {
+    --bg: #ffffff;
+    --card: #ffffff;
+    --text: #212529;
+    --border: #dee2e6;
+}
+
+.dark-mode {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #f8f9fa;
+    --border: #343a40;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.card {
+    background-color: var(--card);
+    border-color: var(--border);
+}
+
+.form-control {
+    background-color: var(--bg);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.form-control:focus {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Tarefas */
+
+.tarefa-card {
+    border-left: 5px solid #0d6efd;
+    transition: 0.2s;
+}
+
+.tarefa-card:hover {
+    transform: translateY(-2px);
+}
+
+.tarefa-concluida {
+    border-left-color: #198754;
+    opacity: 0.8;
+}
+
+.tarefa-concluida .tarefa-titulo {
+    text-decoration: line-through;
+}
+
+/* animação */
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(10px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+.tarefa-card {
+    animation: fadeIn .3s ease;
+}
