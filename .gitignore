@@ -1,8 +1,21 @@
-# IntelliJ / IDE
+# ===== IntelliJ IDEA / IDEs =====
 .idea/
 *.iml
 out/
 
-# Logs e arquivos temporários
-*.log
+# ===== Maven =====
+target/
+
+# ===== Compilados =====
 *.class
+
+# ===== Logs =====
+*.log
+
+# ===== Sistema Operacional =====
+.DS_Store
+Thumbs.db
+
+# ===== Arquivos temporários =====
+*.tmp
+*.bak
