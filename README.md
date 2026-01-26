@@ -1,4 +1,4 @@
-#  BootcampJava
+# BootcampJava
 
 Repositório criado para armazenar os **códigos desenvolvidos durante o Bootcamp de Java**.  
 Os conteúdos estão organizados por aula, acompanhando a evolução do aprendizado.
@@ -28,15 +28,53 @@ Os conteúdos estão organizados por aula, acompanhando a evolução do aprendiz
         - Jogador
         - Elevador
 
+- **Aula 4 – Gerenciador de Tarefas Web**
+    - Sistema web para criar, concluir, reabrir e excluir tarefas
+    - Front-end com HTML, CSS, JavaScript e Bootstrap
+    - Armazenamento local via **LocalStorage**
+    - Funcionalidades:
+        - Criar tarefa
+        - Concluir/Reabrir tarefa
+        - Excluir tarefa
+        - Filtros (Todas / Pendentes / Concluídas)
+        - Modo escuro
+        - Salvamento automático
+    - Estrutura do projeto:
+        ```
+        Aula4/
+        ├── index.html
+        ├── styles.css
+        └── script.js
+        ```
+    - Conceitos aplicados: DOM, eventos, template literals, variáveis CSS, grid system e cards do Bootstrap
+
+- **Aula 5 – Cadastro de Produtos — Spring Boot API**
+    - API REST para cadastro, consulta e gerenciamento de produtos
+    - Tecnologias:
+        - Java / POO
+        - Spring Boot
+        - JPA / Hibernate
+        - Banco de dados H2 em memória
+    - Funcionalidades:
+        - Criar, listar, buscar por ID, buscar por preço ou quantidade, atualizar e excluir produtos
+    - Estrutura do projeto:
+        ```
+        Controller → Service → Repository → Entity → Banco
+        ```
+    - Conceitos aplicados: Controllers REST, injeção de dependência, queries JPA, endpoints HTTP, JSON, Postman
+    - Limitações: banco em memória, sem autenticação, sem front-end integrado
+    - Melhorias futuras: DTOs, validações avançadas, paginação, upload de imagens, documentação Swagger
+
 ---
 
-## 📂 Estrutura
+## 📂 Estrutura Geral
 
 BootcampJava/
 ├── Aula1/
 ├── Aula2/
-└── Aula3/
-
+├── Aula3/
+├── Aula4/
+└── Aula5/
 
 ---
 
@@ -51,12 +89,7 @@ BootcampJava/
 
 ## ▶️ Como Executar
 
+### Aula 1 a 3 (Java puro)
 1. Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/BootcampJava.git
-Abra a aula desejada em uma IDE (IntelliJ, Eclipse ou VS Code)
-
-Execute a classe Main.java da aula escolhida
-
-👨‍💻 Autor - José Fernando
-Repositório desenvolvido para fins educacionais durante o Bootcamp de Java.
