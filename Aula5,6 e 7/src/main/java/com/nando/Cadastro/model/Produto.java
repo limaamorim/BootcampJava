@@ -20,12 +20,16 @@ public class Produto {
 
     private Integer quantidade;
 
+    private Boolean ativo;
+
     public Produto() {}
 
-    public Produto(String nome, Double preco, Integer quantidade) {
+    public Produto(String nome, Double preco, Integer quantidade, Boolean ativo) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
+        this.ativo = ativo;
+
     }
 
     public Long getId() {
@@ -55,4 +59,13 @@ public class Produto {
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
     }
+
+    public Boolean getAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(Boolean ativo) {
+        this.ativo = ativo;
+    }
+
 }
