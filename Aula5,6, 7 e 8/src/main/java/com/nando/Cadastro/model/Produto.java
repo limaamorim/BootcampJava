@@ -12,14 +12,9 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Id automático
     private Long id;
 
-    @NotBlank(message = "Nome é obrigatório") //Não aceita vazia, ai aparece o messagem
     private String nome;
-
-    @Positive(message = "Preço deve ser maior que zero") // Só aceita números acima de 0
     private Double preco;
-
     private Integer quantidade;
-
     private Boolean ativo;
 
     public Produto() {}
