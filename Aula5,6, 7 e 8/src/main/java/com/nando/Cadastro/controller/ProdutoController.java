@@ -25,7 +25,7 @@ public class ProdutoController {
     public ResponseEntity<ProdutoResponseDTO> salvar(
             @RequestBody @Valid ProdutoRequestDTO dto) {
 
-        return ResponseEntity.ok(service.salvar(dto));
+        return ResponseEntity.status(201).body(service.salvar(dto));
     }
 
     @GetMapping
@@ -35,13 +35,9 @@ public class ProdutoController {
 
     @GetMapping("/{id}")
     public ResponseEntity<ProdutoResponseDTO> buscarPorId(@PathVariable Long id) {
-
-        ProdutoResponseDTO produto = service.buscarPorId(id);
-
-        if (produto == null) return ResponseEntity.notFound().build();
-
-        return ResponseEntity.ok(produto);
+        return ResponseEntity.ok(service.buscarPorId(id));
     }
+
 
     @PutMapping("/{id}")
     public ResponseEntity<ProdutoResponseDTO> atualizar(
